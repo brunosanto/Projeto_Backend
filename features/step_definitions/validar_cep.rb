@@ -1,9 +1,9 @@
 Dado(/^que faça uma consulta atraves de um CEP$/) do
-  @result = HTTParty.get('http://correiosapi.apphb.com/cep/06322010')
+  @result = HTTParty.get('https://viacep.com.br/ws/06322010/json')
 end
 
 Dado(/^que faça uma consulta atraves de um CEP inválido$/) do
-  @result = HTTParty.get('http://correiosapi.apphb.com/cep/99999999')
+  @result = HTTParty.get('https://viacep.com.br/ws/99999999/json')
   puts @result.response.code
 end
 
