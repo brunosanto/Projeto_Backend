@@ -11,4 +11,4 @@ Cenário: Válidar CEP válido pela API dos correios
 @invalido
   Cenário: Válidar CEP Inválido pela API dos correios
     Dado que faça uma consulta atraves de um CEP inválido
-    Então o código da resposta deve ser "404"
+    Então o código da resposta deve ser "400"
